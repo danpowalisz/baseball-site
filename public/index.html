@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baseball Information Site</title>
+
+  <!-- Google Fonts via @import (intentionally not using &lt;link&gt;) -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap');
+  </style>
+
+  <!-- Load lodash from local copy (intentionally including full library) -->
+  <script src="/vendor/lodash.min.js"></script>
+  <!-- ALL JS loaded synchronously in &lt;head&gt; (intentionally not defer/async) -->
+  <script src="app.js"></script>
+</head>
+<body>
+  <!-- Sticky navbar -->
+  <nav id="navbar">
+    <div class="nav-logo">Baseball Central</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#topics">Topics</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero section with large background image -->
+  <header id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Baseball Central</h1>
+      <p>Your premier destination for all things baseball</p>
+    </div>
+  </header>
+
+  <!-- About section with profile photo -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <img src="images/profile.png" alt="About profile photo" class="profile-photo">
+        <p class="about-text">
+          Baseball Central is your go-to resource for everything baseball.
+          From current season updates and historical records to Hall of Fame inductions
+          and minor league action, we've got you covered. Dive into our comprehensive
+          coverage and become a smarter baseball fan today!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Topics section with 4 topic cards -->
+  <section id="topics" class="topics-section">
+    <h2>Topics</h2>
+    <div class="topics-grid">
+      <div class="topic-card current">
+        <img src="images/current.png" alt="Current season coverage">
+        <h3>Current Season</h3>
+        <p>Latest updates, scores, and in-depth analysis of this season's action.</p>
+      </div>
+
+      <div class="topic-card past">
+        <img src="images/past.png" alt="Historical coverage">
+        <h3>Past Seasons</h3>
+        <p>Explore historical records, legendary moments, and classic games from seasons gone by.</p>
+      </div>
+
+      <div class="topic-card hof">
+        <img src="images/hof.png" alt="Hall of Fame coverage">
+        <h3>Hall of Fame</h3>
+        <p>Celebrate the greatest players in baseball history and their remarkable achievements.</p>
+      </div>
+
+      <div class="topic-card minors">
+        <img src="images/minors.png" alt="Minor League coverage">
+        <h3>Minor Leagues</h3>
+        <p>Follow talent in the farm system and discover tomorrow's superstars today.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact form -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Baseball Central. All rights reserved.</p>
+  </footer>
+</body>
+</html>
