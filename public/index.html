@@ -11,12 +11,7 @@
     h1, h2, h3 { font-family: inherit; font-weight: 700; }
   </style>
 
-  <!-- Load lodash from local copy (intentionally including full library) -->
-  <script src="/vendor/lodash.min.js"></script>
-  <!-- Lazy load non-critical resources after DOM paint -->
-  <link rel="preload" as="script" href="app.js">
-  <link rel="preload" href="/vendor/lodash.min.js" as="script">
-  <link rel="prefetch" href="images/minors.png" as="image">
+  <!-- ALL JS loaded synchronously in &lt;head&gt; (intentionally not defer/async) -->
   <script src="app.js"></script>
 </head>
 <body>
