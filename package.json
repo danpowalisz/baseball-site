@@ -1,12 +1,13 @@
 {
   "name": "baseball-site",
   "version": "1.0.0",
-  "description": "Simple baseball information website",
+  "description": "A simple baseball information website",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.21.2",
+    "lodash": "^4.17.21"
   }
 }
