@@ -25,8 +25,8 @@ body {
     font-family: 'Roboto', sans-serif;
     /* Body text color */
     color: #333;
-    /* Background color for main content */
-    background-color: #f5f5f5;
+    /* Modern light slate gray background */
+    background-color: #a5b4d1;
     /* Remove default margin and padding */
     margin: 0;
     padding: 0;
@@ -47,10 +47,15 @@ body {
     right: 0;
     /* Height of navbar */
     height: 60px;
-    /* Background color */
-    background-color: #2c3e50;
+    /* Dark blue-gray color */
+    background-color: #1A252F;
     /* No shadow for clean look */
     box-shadow: none;
+}
+
+.logo a {
+    /* White text on dark navbar */
+    color: #ffffff;
 }
 
 .nav-container {
@@ -106,8 +111,8 @@ body {
    ======================================== */
 
 .hero-section {
-    /* Full viewport height */
-    height: 100vh;
+    /* Further reduced height for better content balance */
+    height: 35vh;
     /* Background image set inline */
     background-image: url('images/background.png');
     /* Cover sizing */
@@ -122,8 +127,19 @@ body {
     justify-content: center;
     /* Align items to bottom with spacing */
     align-items: flex-end;
-    /* Padding from bottom */
-    padding-bottom: 100px;
+    /* Reduced padding from bottom */
+    padding-bottom: 40px;
+}
+
+.hero-section .hero-content {
+    /* Dark text color for light background */
+    color: #2c3e50;
+}
+
+.hero-section .hero-content h1,
+.hero-section .hero-content p {
+    /* Darker colors for hero content */
+    color: #2c3e50;
 }
 
 .hero-content {
@@ -131,13 +147,9 @@ body {
     text-align: center;
     /* Max width for content */
     max-width: 800px;
-    /* White text color */
-    color: #ffffff;
     /* Padding around content */
     padding: 0 20px;
 }
-
-.hero-content h1 {
     /* Font size for hero heading */
     font-size: 4rem;
     /* Bold weight */
@@ -166,8 +178,8 @@ body {
 .about-section {
     /* Padding around section */
     padding: 80px 20px;
-    /* Background color */
-    background-color: #ffffff;
+    /* Light slate blue background */
+    background-color: #a5b4d1;
 }
 
 .about-section .container {
@@ -218,11 +230,45 @@ body {
    TOPICS SECTION STYLES
    ======================================== */
 
+/* Topic pages and their hero sections use light slate blue */
+.hero-section.hero-page {
+    background-color: #a5b4d1;
+}
+
+/* Card layout for individual topic pages - image on left, text on right */
+.topic-page-card {
+    display: flex;
+    gap: 30px;
+}
+
+.topic-page-card img {
+    width: 60%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.topic-page-card .topic-content {
+    flex: 1;
+    color: #333;
+}
+
+.topic-page-card h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.topic-page-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
 .topics-section {
     /* Padding around section */
     padding: 80px 20px;
-    /* Background color */
-    background-color: #f5f5f5;
+    /* Light slate blue background */
+    background-color: #a5b4d1;
 }
 
 .topics-section h2 {
@@ -246,8 +292,8 @@ body {
 }
 
 .topic-card {
-    /* Background color */
-    background-color: #ffffff;
+    /* Light slate gray card background */
+    background-color: #d5dbe6;
     /* Border radius */
     border-radius: 15px;
     /* Overflow hidden for images */
@@ -299,8 +345,17 @@ body {
 .contact-section {
     /* Padding around section */
     padding: 80px 20px;
-    /* Background color */
-    background-color: #2c3e50;
+    /* Slate blue background */
+    background-color: #7D8FB4;
+    /* Dark text for light background */
+    color: #333;
+}
+
+.contact-section h2,
+.contact-section label {
+    /* Dark text for light background */
+    color: #2c3e50;
+}
     /* Light text for dark background */
     color: #ffffff;
 }
