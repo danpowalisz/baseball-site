@@ -109,7 +109,7 @@ body {
     /* Full viewport height */
     height: 100vh;
     /* Background image set inline */
-    background-image: url('images/hero.png');
+    background-image: url('images/background.png');
     /* Cover sizing */
     background-size: cover;
     /* Center positioning */
