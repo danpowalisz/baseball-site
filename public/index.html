@@ -1,93 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baseball Information Site</title>
-
-    <!-- Load Google Fonts via @import -->
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-    </style>
-
-    <!-- Load main stylesheet -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Load app.js synchronously in head (not defer/async) -->
-    <script src="app.js"></script>
-</head>
-<body>
-    <!-- Sticky Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <h1 class="logo"><a href="/">Baseball Info</a></h1>
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#topics">Topics</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <h1>Welcome to Baseball Info</h1>
-            <p>Your source for everything baseball</p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <img src="images/profile.png" alt="Profile Photo" class="profile-photo">
-                <p>Welcome to Baseball Info, your premier destination for all things baseball! We're passionate about the sport and dedicated to bringing you comprehensive coverage of current events, historical insights, and legendary achievements. Whether you're a lifelong fan or just getting into the game, we have something for everyone.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Topics Section with links to separate pages -->
-    <section id="topics" class="topics-section">
-        <div class="container">
-            <h2>Topics</h2>
-            <div class="topics-grid">
-                <!-- Current Topic Card -->
-                <div class="topic-card">
-                    <img src="images/current_news.png" alt="Current Events">
-                    <h3><a href="current.html" style="color: inherit; text-decoration: none;">Current</a></h3>
-                    <p>Latest news and updates from the baseball world</p>
-                </div>
-
-                <!-- Past Topic Card -->
-                <div class="topic-card">
-                    <img src="images/past.png" alt="History">
-                    <h3><a href="past.html" style="color: inherit; text-decoration: none;">Past</a></h3>
-                    <p>Historical moments and legendary careers</p>
-                </div>
-
-                <!-- Hall of Fame Topic Card -->
-                <div class="topic-card">
-                    <img src="images/hall_of_fame.png" alt="Hall of Fame">
-                    <h3><a href="hof.html" style="color: inherit; text-decoration: none;">Hall of Fame</a></h3>
-                    <p>Celebrating the greatest players of all time</p>
-                </div>
-
-                <!-- Minor League Topic Card -->
-                <div class="topic-card">
-                    <img src="images/minor_league.png" alt="Minor Leagues">
-                    <h3><a href="minors.html" style="color: inherit; text-decoration: none;">Minor League</a></h3>
-                    <p>The farm system and future stars</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 Baseball Info. All rights reserved.</p>
-    </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baseball Info</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
