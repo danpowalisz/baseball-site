@@ -1,5 +1,0 @@
-commit	total_ms	dom_ms	status	description
-d51116c	14.90	10.90	keep	Opt 1: Remove Google Fonts API (2890ms->15.7ms, 99% improvement)
-637311a	17.30	10.90	keep	Opt 2: Add compression + immutable cache headers (server.js)
-60c0a18	14.40	9.20	keep	Opt 3: Add preload/prefetch hints (15.8->14.4ms)
-14448af	17.20	11.90	discard	Opt 4: Remove dead code - reverted, preload was beneficial
