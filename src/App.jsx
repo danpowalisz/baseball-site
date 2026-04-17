@@ -10,17 +10,17 @@ import Minors from './pages/Minors';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="current" element={<Current />} />
-        <Route path="past" element={<Past />} />
-        <Route path="hof" element={<HallOfFame />} />
-        <Route path="minors" element={<Minors />} />
-      </Route>
-    </Routes>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/current" element={<Current />} />
+        <Route path="/past" element={<Past />} />
+        <Route path="/hof" element={<HallOfFame />} />
+        <Route path="/minors" element={<Minors />} />
+      </Routes>
+    </Layout>
   );
 }
 

@@ -17,7 +17,7 @@ const Current = () => (
           <div className="topic-page-grid">
             {articles.map((article, index) => (
               <article key={index} className="topic-page-card">
-                <img src="../images/current_news.png" alt={article.title} />
+                <img src="/images/current_news.png" alt={article.title} />
                 <div className="topic-content">
                   <h3>{article.title}</h3>
                   <p>{article.description}</p>
